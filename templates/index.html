@@ -1,5 +1,8 @@
 <html>
-{% for i in range(0,3) %}
-<p>{{data_keys[i]}}: {{data_values[i]}}</p>
-{% endfor %}
+<p>Name: {% for i in data_names %} {{i}} - {% endfor %}</p>
+<hr/>
+<p>LastName: {% for i in data_lastnames %} {{i}} - {% endfor %}</p>
+<hr/>
+<p>Role: {% for i in data_roles %} {{i}} - {% endfor %}</p>
+<hr/>
 </html>
